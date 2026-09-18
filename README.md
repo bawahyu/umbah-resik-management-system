@@ -30,3 +30,5 @@ Because the infrastructure is fully containerized, deploying the system requires
 1. Clone the repository:
    ```bash
    git clone [https://github.com/baguswahyu/umbah-resik-management-system.git](https://github.com/baguswahyu/umbah-resik-management-system.git)
+<img width="955" height="471" alt="Cuplikan layar 2026-09-19 005329" src="https://github.com/user-attachments/assets/3b82a3a3-d451-403b-a96e-e8d7a51a4b41" />
+
