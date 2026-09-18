@@ -4,7 +4,7 @@ A localized Point of Sale (POS) and operational management system designed speci
 
 While the application serves as a functional booking and inventory system for the business, **the primary engineering focus of this repository is the deployment architecture and cloud infrastructure.** The system is built to demonstrate isolated environments, containerization, and network reliability.
 
-##  Engineering & Infrastructure Focus (The Iceberg Strategy)
+##  Engineering & Infrastructure Focus 
 
 Rather than just building a standalone web app, this project is architected with a DevOps mindset to ensure the laundry shop's data is secure and the system is immune to local hardware failures.
 
