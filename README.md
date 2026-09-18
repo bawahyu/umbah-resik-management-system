@@ -1,2 +1,32 @@
-# umbah-resik-management-system
-A Web-based Management System for Shoe Laundry Services.
+# Umbah Resik: Shoe Care Management & POS System
+
+A localized Point of Sale (POS) and operational management system designed specifically for shoe care and laundry services. 
+
+While the application serves as a functional booking and inventory system for the business, **the primary engineering focus of this repository is the deployment architecture and cloud infrastructure.** The system is built to demonstrate isolated environments, containerization, and network reliability.
+
+##  Engineering & Infrastructure Focus (The Iceberg Strategy)
+
+Rather than just building a standalone web app, this project is architected with a DevOps mindset to ensure the laundry shop's data is secure and the system is immune to local hardware failures.
+
+* **Containerization:** The entire application (frontend and Node.js backend) is containerized using **Docker** and orchestrated via `docker-compose.yml`. This ensures the environment is identical whether deployed on a local shop computer or a cloud server.
+* **Deployment Architecture:** Designed to be easily migrated from local on-premise routing to **AWS EC2** for cloud centralization.
+* **Network Security (Planned):** Implementation of reverse proxy and local LAN segmentation to separate public guest Wi-Fi from the cashier's transaction network.
+
+##  Tech Stack
+
+**Infrastructure & Operations:**
+* Docker & Docker Compose
+* Target Cloud Deployment: AWS (EC2)
+* Version Control: Git
+
+**Application Core:**
+* Backend: Node.js
+* Frontend: HTML / CSS / Vanilla JS (Client-side rendering)
+
+## Quick Start (Deployment)
+
+Because the infrastructure is fully containerized, deploying the system requires minimal manual configuration.
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/baguswahyu/umbah-resik-management-system.git](https://github.com/baguswahyu/umbah-resik-management-system.git)
