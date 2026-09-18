@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # 1. Kontainer untuk UI/UX (Web Server)
+  frontend:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    depends_on:
+      - backend
+
+  # 2. Kontainer untuk API (Mesin Data)
+  backend:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    command: sh -c "npm install && node server.js"
+    ports:
+      - "3000:3000"

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UmbahResik | Premium Shoe Care Surabaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Anton (Tegas/Working Class) & Space Mono (Teknik/Profesional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kertas': '#F9F8F6', /* Off-white bersih */
+                        'marun': '#8C2929',  /* Merah korporat/Redcard Anda */
+                        'tinta': '#2D2D2D',
+                    },
+                    fontFamily: {
+                        'logo': ['"Anton"', 'sans-serif'],        /* Font tebal & lugas */
+                        'tech': ['"Space Mono"', 'monospace'],    /* Font rapi/teknik */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animasi Marquee (Lugas & Profesional) */
+        .marquee-container { overflow: hidden; white-space: nowrap; width: 100%; background: #8C2929; color: #F9F8F6; padding: 10px 0; border-bottom: 2px solid #2D2D2D; }
+        .marquee-content { display: inline-block; animation: marquee 25s linear infinite; font-family: 'Space Mono', monospace; font-size: 0.85rem; letter-spacing: 1px; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* Tombol Soft-Shadow */
+        .btn-marun { box-shadow: 0 10px 20px -5px rgba(140,41,41,0.4); transition: all 0.3s ease; }
+        .btn-marun:hover { transform: translateY(-3px); box-shadow: 0 15px 25px -5px rgba(140,41,41,0.5); }
+        
+        /* Tumpukan Foto (Lookbook Vibe yang Rapi) */
+        .photo-stack { position: relative; width: 100%; max-width: 380px; height: 350px; margin: 0 auto; }
+        .photo-card { position: absolute; background: white; padding: 8px 8px 25px 8px; box-shadow: 0 8px 20px -5px rgba(0,0,0,0.15); transition: all 0.4s ease; border: 1px solid #eaeaea; }
+        
+        .photo-1 { top: 0; left: 0; transform: rotate(-3deg); z-index: 1; width: 180px; }
+        .photo-2 { top: 30px; right: 0; transform: rotate(4deg); z-index: 2; width: 200px; }
+        .photo-3 { bottom: 0; left: 15%; transform: rotate(-1deg); z-index: 3; width: 220px; }
+        
+        .photo-card:hover { z-index: 10; transform: scale(1.05) rotate(0deg); box-shadow: 0 15px 30px -5px rgba(0,0,0,0.25); }
+        
+        /* Form Transisi Halus */
+        .form-pesanan { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; opacity: 0; }
+        .form-pesanan.aktif { max-height: 600px; opacity: 1; margin-top: 1.5rem; }
+    </style>
+</head>
+<body class="bg-kertas text-tinta min-h-screen flex flex-col font-tech overflow-x-hidden selection:bg-marun selection:text-white">
+
+    <!-- Pita Teks Berjalan (Simbol ✦ & Tema Surabaya) -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            RESTORED IN SURABAYA CITY ✦ RAWAT SEPATU HARIANMU, SIAP UNTUK MELANGKAH LAGI ✦ TECHNICAL RESTORATION FOR DAILY WEAR ✦ RESTORED IN SURABAYA CITY ✦ RAWAT SEPATU HARIANMU, SIAP UNTUK MELANGKAH LAGI ✦ TECHNICAL RESTORATION FOR DAILY WEAR ✦
+        </div>
+    </div>
+
+    <!-- Kontainer Utama -->
+    <main class="flex-1 max-w-6xl w-full mx-auto p-6 md:p-12 flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20 relative">
+        
+        <!-- BAGIAN KIRI: Visual & Branding -->
+        <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left relative z-10">
+            
+            <h1 class="font-logo text-7xl md:text-8xl text-marun leading-none mb-2 tracking-wide">UMBAH<br>RESIK.</h1>
+            <p class="font-tech text-sm opacity-70 mb-8 max-w-xs">Restorasi teknis untuk sepatu harian Anda. Dari ruang kerja hingga jalanan kota.</p>
+            
+            <!-- Tumpukan 3 Foto (Converse, Vans, Docmart) -->
+            <div class="photo-stack">
+                <!-- Foto 1: Converse -->
+                <div class="photo-card photo-1">
+                    <img src="https://images.unsplash.com/photo-1494496195158-c3becb4f2475?q=80&w=600&auto=format&fit=crop" alt="Converse" class="w-full h-28 object-cover grayscale hover:grayscale-0 transition duration-300">
+                    <p class="font-tech text-[10px] text-center mt-2 opacity-60">CANVAS // DAILY</p>
+                </div>
+                <!-- Foto 2: Vans -->
+                <div class="photo-card photo-2">
+                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&auto=format&fit=crop" alt="Vans" class="w-full h-32 object-cover grayscale hover:grayscale-0 transition duration-300">
+                    <p class="font-tech text-[10px] text-center mt-2 opacity-60">SUEDE // STREET</p>
+                </div>
+                <!-- Foto 3: Docmart -->
+                <div class="photo-card photo-3">
+                    <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?q=80&w=600&auto=format&fit=crop" alt="Dr Martens" class="w-full h-36 object-cover grayscale hover:grayscale-0 transition duration-300">
+                    <p class="font-tech text-[10px] text-center mt-2 opacity-60">LEATHER // WORK</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BAGIAN KANAN: Interaksi & Menu -->
+        <div class="w-full md:w-1/2 max-w-md relative z-10 flex flex-col gap-4">
+            
+            <!-- Tombol 1: Order -->
+            <button onclick="toggleForm()" class="btn-marun w-full bg-marun text-white rounded-full py-4 px-8 flex justify-between items-center group">
+                <span class="font-bold text-lg tracking-wide group-hover:pl-2 transition-all">Order Now!</span>
+                <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+            </button>
+
+            <!-- FORM PESANAN (API) -->
+            <div id="formContainer" class="form-pesanan bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+                <div class="text-center mb-6">
+                    <h3 class="text-marun font-bold text-xl uppercase tracking-wider font-sans">Formulir Pesanan</h3>
+                    <p class="text-xs text-gray-500 mt-1 font-sans">Lengkapi data untuk penjemputan atau pengiriman.</p>
+                </div>
+                
+                <form id="orderForm" class="space-y-5 font-sans">
+                    <!-- Input Nama -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-2 uppercase tracking-wide">Nama Lengkap</label>
+                        <input type="text" id="nama" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-marun/50 focus:border-marun transition-all text-sm text-gray-800" placeholder="Contoh: Budi Santoso" required>
+                    </div>
+                    
+                    <!-- Input Telepon -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-2 uppercase tracking-wide">Nomor WhatsApp</label>
+                        <input type="tel" id="telepon" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-marun/50 focus:border-marun transition-all text-sm text-gray-800" placeholder="Contoh: 08123456789" required>
+                    </div>
+                    
+                    <!-- Input Layanan -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-2 uppercase tracking-wide">Pilihan Layanan</label>
+                        <select id="layanan" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-marun/50 focus:border-marun transition-all text-sm text-gray-800">
+                            <option value="Fast Clean">Fast Clean (24 Jam) - Rp 30.000</option>
+                            <option value="Deep Clean">Deep Clean (Detail) - Rp 50.000</option>
+                            <option value="Leather Care">Leather Care (Docmart/Kulit) - Rp 75.000</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Tombol Submit -->
+                    <button type="button" onclick="kirimKeSistem()" class="w-full bg-tinta text-white font-bold py-4 rounded-xl hover:bg-marun transition-colors mt-4 text-sm uppercase tracking-widest shadow-md">
+                        Kirim Pesanan
+                    </button>
+                </form>
+            </div>
+
+            <!-- Tombol 2: Katalog -->
+            <a href="#" class="btn-marun w-full bg-marun text-white rounded-full py-4 px-8 flex justify-between items-center group">
+                <span class="font-bold text-lg tracking-wide group-hover:pl-2 transition-all">Catalogue</span>
+                <i class="fa-solid fa-cart-shopping text-xl group-hover:scale-110 transition-transform"></i>
+            </a>
+
+            <!-- Tombol 3: Survey -->
+            <a href="#" class="btn-marun w-full bg-marun text-white rounded-full py-4 px-8 flex justify-between items-center group">
+                <span class="font-bold text-lg tracking-wide group-hover:pl-2 transition-all">Survey Kepuasan</span>
+                <i class="fa-solid fa-star text-xl group-hover:scale-110 transition-transform"></i>
+            </a>
+
+            <!-- Garis Pembatas -->
+            <div class="flex items-center gap-4 my-4">
+                <div class="h-px bg-marun flex-1 opacity-30"></div>
+                <span class="text-marun font-bold text-sm">Hit Us On!</span>
+                <div class="h-px bg-marun flex-1 opacity-30"></div>
+            </div>
+
+            <!-- Tombol Sosmed -->
+            <a href="#" class="w-full border-2 border-marun text-marun rounded-full py-3 px-8 flex justify-between items-center hover:bg-marun hover:text-white transition-colors group">
+                <span class="font-bold text-md">Instagram</span>
+                <i class="fa-brands fa-instagram text-xl"></i>
+            </a>
+            
+        </div>
+    </main>
+
+    <!-- Script API -->
+   <!-- Script Integrasi API & WhatsApp (Final Build) -->
+    <script>
+        function toggleForm() {
+            const form = document.getElementById('formContainer');
+            form.classList.toggle('aktif');
+        }
+
+        async function kirimKeSistem() {
+            const nama = document.getElementById('nama').value;
+            const telepon = document.getElementById('telepon').value;
+            const layanan = document.getElementById('layanan').value;
+
+            if (!nama || !telepon) {
+                alert("Mohon lengkapi Nama dan Nomor WhatsApp Anda.");
+                return;
+            }
+
+            const btn = event.target;
+            const teksAsli = btn.innerText;
+            btn.innerText = "SINKRONISASI DATA...";
+            btn.disabled = true;
+
+            try {
+                // AKSI 1: Tembak data ke Backend (Docker) untuk dicatat di Excel
+                const response = await fetch('http://localhost:3000/api/order', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ nama, telepon, layanan })
+                });
+
+                if (response.ok) {
+                    // AKSI 2: Jika berhasil dicatat, langsung buka WhatsApp Admin
+                    const nomorAdmin = "6281234567890"; // GANTI DENGAN NOMOR WA ANDA
+                    
+                    const teksPesan = `Halo UmbahResik!\nSaya ingin mengkonfirmasi pesanan yang baru saja saya input di website.\n\n*Detail Pesanan:*\n- Nama: ${nama}\n- Layanan: ${layanan}\n\nMohon informasi penjemputan/pengiriman.`;
+                    
+                    // encodeURIComponent berfungsi agar spasi dan enter terbaca di WA
+                    const linkWA = `https://wa.me/${nomorAdmin}?text=${encodeURIComponent(teksPesan)}`;
+                    
+                    alert("✅ Data terekap di sistem kami! Mengalihkan ke WhatsApp admin...");
+                    
+                    document.getElementById('orderForm').reset();
+                    toggleForm(); // Menutup form
+                    
+                    // Membuka WA di tab baru
+                    window.open(linkWA, '_blank');
+                } else {
+                    throw new Error("Server menolak data");
+                }
+            } catch (error) {
+                alert("Gagal sinkronisasi. Pastikan Docker Server Anda menyala.");
+            } finally {
+                btn.innerText = teksAsli;
+                btn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
